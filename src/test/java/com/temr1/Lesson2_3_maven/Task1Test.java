@@ -31,4 +31,25 @@ public class Task1Test {
         boolean exp = false;
         assertEquals(exp, actual);
     }
+
+    @Test
+    public void isPalindromeThree() {
+        boolean actual = task1.isPalindrome(2);
+        boolean exp = true;
+        assertEquals(exp, actual);
+    }
+
+    @Test
+    public void isPalindromeTFour() {
+        boolean actual = task1.isPalindrome(10);
+        boolean exp = false;
+        assertEquals(exp, actual);
+    }
+
+    @Test
+    public void isPalindromeTFive() {
+        boolean actual = task1.isPalindrome(000);
+        boolean exp = true;
+        assertEquals(exp, actual);
+    }
 }

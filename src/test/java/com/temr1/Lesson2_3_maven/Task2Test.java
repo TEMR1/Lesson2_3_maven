@@ -31,4 +31,39 @@ public class Task2Test {
         int exp = 4;
         assertEquals(exp,actual);
     }
+
+    @Test
+    public void task2Three() {
+        int actual = task2.task2("");
+        int exp = 0;
+        assertEquals(exp,actual);
+    }
+
+    @Test
+    public void task2Four() {
+        int actual = task2.task2("   ");
+        int exp = 0;
+        assertEquals(exp,actual);
+    }
+
+    @Test
+    public void task2Five() {
+        int actual = task2.task2("Hi");
+        int exp = 2;
+        assertEquals(exp,actual);
+    }
+
+    @Test
+    public void task2Six() {
+        int actual = task2.task2("Hello world   ");
+        int exp = 5;
+        assertEquals(exp,actual);
+    }
+
+    @Test
+    public void task2Seven() {
+        int actual = task2.task2("Hello   ");
+        int exp = 5;
+        assertEquals(exp,actual);
+    }
 }
